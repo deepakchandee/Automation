@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="categorypage.Categorylistitem"/>
+      <class name="plppage.PLPPageSearching"/>
+      <class name="categorypage.Categorytopmenu"/>
+      <class name="categorypage.CategorypageLeftmenu"/>
+      <class name="pdppage.QuantitySpinnerPdp"/>
+      <class name="cart.CartProceedBtnExistance"/>
+      <class name="plppage.PLPHeaderFooter"/>
+      <class name="homepage.HomepageTopmenu"/>
+      <class name="pdppage.MessageAfterAddingProduct"/>
+      <class name="plppage.PlpProductList"/>
+      <class name="homepage.Subscriptionsignup"/>
+      <class name="categorypage.Categorysearchpage"/>
+      <class name="homepage.Header"/>
+      <class name="checkout.Cancel_Checkout"/>
+      <class name="homepage.Submenucategorys1"/>
+      <class name="cart.RemoveitemFromcart"/>
+      <class name="cart.CartpageHeaderFooter"/>
+      <class name="cart.CartpopupAndUpdation"/>
+      <class name="homepage.Footer"/>
+      <class name="cart.CartTopmenu"/>
+      <class name="plppage.TopMenuPlpPage"/>
+      <class name="pdppage.ProductImageTest"/>
+      <class name="homepage.Loginlink_Homepage"/>
+      <class name="emailgenerator.Email"/>
+      <class name="categorypage.Categoryheaderfooter"/>
+      <class name="pdppage.PdpTopMenu"/>
+      <class name="ExcelGenerator.Excelreport"/>
+      <class name="checkout.Checkout_Process"/>
+      <class name="cart.MainCartUpdation"/>
+      <class name="homepage.Searchkey"/>
+      <class name="pdppage.PdpDetails"/>
+      <class name="homepage.HomepageSections"/>
+      <class name="plppage.PagerTest"/>
+      <class name="homepage.Cart_Link"/>
+      <class name="cart.Addtocart"/>
+      <class name="pdppage.PdpHeaderFooter"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

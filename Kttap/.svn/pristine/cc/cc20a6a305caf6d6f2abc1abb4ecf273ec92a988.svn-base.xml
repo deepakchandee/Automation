@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="1" name="Test" preserve-order="true">
+    <classes>
+    
+      <class name="homepage.Header"/>
+      <class name="homepage.Footer"/>
+      <class name="homepage.HomepageTopmenu"/>
+      <class name="homepage.HomepageSections"/>
+      <class name="homepage.Submenucategorys1"/>
+      <class name="homepage.Subscriptionsignup"/> 
+      <class name="homepage.Loginlink_Homepage"/>
+      <class name="homepage.Cart_Link"/>
+      <class name="homepage.Searchkey"/>
+      <class name="categorypage.Categoryheaderfooter"/>
+      <class name="categorypage.Categorytopmenu"/>
+      <class name="categorypage.CategorypageLeftmenu"/>
+      <class name="categorypage.Categorysearchpage"/>
+      <class name="categorypage.Categorylistitem"/>
+      <class name="plppage.PLPHeaderFooter"/>
+      <class name="plppage.TopMenuPlpPage"/>
+      <class name="plppage.PlpProductList"/>
+      <class name="plppage.PLPPageSearching"/>
+      <class name="plppage.PagerTest"/>
+      <class name="pdppage.PdpHeaderFooter"/>
+      <class name="pdppage.PdpTopMenu"/>
+      <class name="pdppage.PdpDetails"/>
+      <class name="pdppage.MessageAfterAddingProduct"/>
+      <class name="pdppage.ProductImageTest"/>
+      <class name="pdppage.QuantitySpinnerPdp"/>
+      <class name="cart.CartpageHeaderFooter"/>
+      <class name="cart.CartTopmenu"/>
+      <class name="cart.Addtocart"/>
+      <class name="cart.CartProceedBtnExistance"/>
+      <class name="cart.RemoveitemFromcart"/>
+      <class name="cart.MainCartUpdation"/>
+      <class name="cart.CartpopupAndUpdation"/>
+      <class name="checkout.Cancel_Checkout"/>
+      <class name="checkout.Checkout_Process"/> 
+     
+ 
+      
+      </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

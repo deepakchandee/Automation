@@ -1,0 +1,344 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 10 16:31:53 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1730 seconds (1730073 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='checkout.Checkout_Process.proceedorder()'><b>proceedorder</b><br>Test class: checkout.Checkout_Process</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button class=&quot;action primary checkout&quot; type=&quot;button&quot; data-bind=&quot;
+                click: placeOrder,
+                attr: {&apos;title&apos;: $t(&apos;Place Order&apos;)},
+                css: {disabled: !isPlaceOrderActionAllowed()}
+                &quot; title=&quot;Place Order&quot;&gt;...&lt;/button&gt; is not clickable at point (1056, 569). Other element would receive the click: &lt;div class=&quot;loading-mask&quot; data-role=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: headless chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
+System info: host: &apos;DESKTOP-EH4DQNG&apos;, ip: &apos;192.168.2.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\YSPL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53270}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.80, webStorageEnabled: true}
+Session ID: 4cba0e6cbcdf2084e2c09495755986a3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at navigationpages.CheckoutPage.checkoutradio(CheckoutPage.java:127)
+	at checkout.Checkout_Process.proceedorder(Checkout_Process.java:54)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1947060963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1947060963'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button class=&quot;action primary checkout&quot; type=&quot;button&quot; data-bind=&quot;
+                click: placeOrder,
+                attr: {&apos;title&apos;: $t(&apos;Place Order&apos;)},
+                css: {disabled: !isPlaceOrderActionAllowed()}
+                &quot; title=&quot;Place Order&quot;&gt;...&lt;/button&gt; is not clickable at point (1056, 569). Other element would receive the click: &lt;div class=&quot;loading-mask&quot; data-role=&quot;loader&quot;&gt;...&lt;/div&gt;
+  (Session info: headless chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:05:20.749Z&apos;
+System info: host: &apos;DESKTOP-EH4DQNG&apos;, ip: &apos;192.168.2.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\YSPL\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53270}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.80, webStorageEnabled: true}
+Session ID: 4cba0e6cbcdf2084e2c09495755986a3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at navigationpages.CheckoutPage.checkoutradio(CheckoutPage.java:127)
+	at checkout.Checkout_Process.proceedorder(Checkout_Process.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>78</td>
+<td>checkout.Checkout_Process@4d3167f4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cart.Addtocart.Addto_cart()'><b>Addto_cart</b><br>Test class: cart.Addtocart</td>
+<td></td>
+<td>22</td>
+<td>cart.Addtocart@1a3869f4</td></tr>
+<tr>
+<td title='homepage.Cart_Link.CartLink()'><b>CartLink</b><br>Test class: homepage.Cart_Link</td>
+<td></td>
+<td>0</td>
+<td>homepage.Cart_Link@5bfbf16f</td></tr>
+<tr>
+<td title='cart.CartpageHeaderFooter.Cartheaderfooter()'><b>Cartheaderfooter</b><br>Test class: cart.CartpageHeaderFooter</td>
+<td></td>
+<td>59</td>
+<td>cart.CartpageHeaderFooter@1e7c7811</td></tr>
+<tr>
+<td title='cart.MainCartUpdation.Cartquantityupdation()'><b>Cartquantityupdation</b><br>Test class: cart.MainCartUpdation</td>
+<td></td>
+<td>51</td>
+<td>cart.MainCartUpdation@63440df3</td></tr>
+<tr>
+<td title='cart.CartTopmenu.Carttop_menu()'><b>Carttop_menu</b><br>Test class: cart.CartTopmenu</td>
+<td></td>
+<td>72</td>
+<td>cart.CartTopmenu@77ec78b9</td></tr>
+<tr>
+<td title='categorypage.Categorylistitem.Category_List()'><b>Category_List</b><br>Test class: categorypage.Categorylistitem</td>
+<td></td>
+<td>7</td>
+<td>categorypage.Categorylistitem@670b40af</td></tr>
+<tr>
+<td title='categorypage.Categorysearchpage.Category_searchitem()'><b>Category_searchitem</b><br>Test class: categorypage.Categorysearchpage</td>
+<td></td>
+<td>14</td>
+<td>categorypage.Categorysearchpage@27f723</td></tr>
+<tr>
+<td title='homepage.Footer.Footer_elements()'><b>Footer_elements</b><br>Test class: homepage.Footer</td>
+<td></td>
+<td>1</td>
+<td>homepage.Footer@7113b13f</td></tr>
+<tr>
+<td title='homepage.Header.Headerelements()'><b>Headerelements</b><br>Test class: homepage.Header</td>
+<td></td>
+<td>0</td>
+<td>homepage.Header@60285225</td></tr>
+<tr>
+<td title='homepage.Loginlink_Homepage.Login_Link()'><b>Login_Link</b><br>Test class: homepage.Loginlink_Homepage</td>
+<td></td>
+<td>0</td>
+<td>homepage.Loginlink_Homepage@59906517</td></tr>
+<tr>
+<td title='pdppage.MessageAfterAddingProduct.Message_Addingproduct()'><b>Message_Addingproduct</b><br>Test class: pdppage.MessageAfterAddingProduct</td>
+<td></td>
+<td>37</td>
+<td>pdppage.MessageAfterAddingProduct@5ed828d</td></tr>
+<tr>
+<td title='pdppage.PdpTopMenu.PDP_Topmenu()'><b>PDP_Topmenu</b><br>Test class: pdppage.PdpTopMenu</td>
+<td></td>
+<td>52</td>
+<td>pdppage.PdpTopMenu@262b2c86</td></tr>
+<tr>
+<td title='pdppage.PdpDetails.PDPattributes()'><b>PDPattributes</b><br>Test class: pdppage.PdpDetails</td>
+<td></td>
+<td>25</td>
+<td>pdppage.PdpDetails@371a67ec</td></tr>
+<tr>
+<td title='plppage.PlpProductList.PLPproduct_list()'><b>PLPproduct_list</b><br>Test class: plppage.PlpProductList</td>
+<td></td>
+<td>19</td>
+<td>plppage.PlpProductList@7b69c6ba</td></tr>
+<tr>
+<td title='plppage.PagerTest.Pager_Test()'><b>Pager_Test</b><br>Test class: plppage.PagerTest</td>
+<td></td>
+<td>44</td>
+<td>plppage.PagerTest@12f41634</td></tr>
+<tr>
+<td title='pdppage.PdpHeaderFooter.Pdpheaderfooter()'><b>Pdpheaderfooter</b><br>Test class: pdppage.PdpHeaderFooter</td>
+<td></td>
+<td>20</td>
+<td>pdppage.PdpHeaderFooter@13c27452</td></tr>
+<tr>
+<td title='plppage.PLPHeaderFooter.Plpheaderfooter()'><b>Plpheaderfooter</b><br>Test class: plppage.PLPHeaderFooter</td>
+<td></td>
+<td>26</td>
+<td>plppage.PLPHeaderFooter@4923ab24</td></tr>
+<tr>
+<td title='pdppage.QuantitySpinnerPdp.Quantity_spinner()'><b>Quantity_spinner</b><br>Test class: pdppage.QuantitySpinnerPdp</td>
+<td></td>
+<td>22</td>
+<td>pdppage.QuantitySpinnerPdp@7a3d45bd</td></tr>
+<tr>
+<td title='cart.RemoveitemFromcart.RemoveitemFrmcart()'><b>RemoveitemFrmcart</b><br>Test class: cart.RemoveitemFromcart</td>
+<td></td>
+<td>48</td>
+<td>cart.RemoveitemFromcart@77f99a05</td></tr>
+<tr>
+<td title='homepage.Submenucategorys1.Subcategory()'><b>Subcategory</b><br>Test class: homepage.Submenucategorys1</td>
+<td></td>
+<td>0</td>
+<td>homepage.Submenucategorys1@6043cd28</td></tr>
+<tr>
+<td title='homepage.Subscriptionsignup.Subscription_signup()'><b>Subscription_signup</b><br>Test class: homepage.Subscriptionsignup</td>
+<td></td>
+<td>7</td>
+<td>homepage.Subscriptionsignup@cb51256</td></tr>
+<tr>
+<td title='homepage.HomepageTopmenu.Top_Menu()'><b>Top_Menu</b><br>Test class: homepage.HomepageTopmenu</td>
+<td></td>
+<td>0</td>
+<td>homepage.HomepageTopmenu@45820e51</td></tr>
+<tr>
+<td title='plppage.TopMenuPlpPage.Topmenu_plppage()'><b>Topmenu_plppage</b><br>Test class: plppage.TopMenuPlpPage</td>
+<td></td>
+<td>12</td>
+<td>plppage.TopMenuPlpPage@44c8afef</td></tr>
+<tr>
+<td title='checkout.Cancel_Checkout.cancel_checkout()'><b>cancel_checkout</b><br>Test class: checkout.Cancel_Checkout</td>
+<td></td>
+<td>25</td>
+<td>checkout.Cancel_Checkout@76a3e297</td></tr>
+<tr>
+<td title='categorypage.Categoryheaderfooter.category_headerfooter()'><b>category_headerfooter</b><br>Test class: categorypage.Categoryheaderfooter</td>
+<td></td>
+<td>8</td>
+<td>categorypage.Categoryheaderfooter@12cdcf4</td></tr>
+<tr>
+<td title='categorypage.CategorypageLeftmenu.categoryleftmenu()'><b>categoryleftmenu</b><br>Test class: categorypage.CategorypageLeftmenu</td>
+<td></td>
+<td>18</td>
+<td>categorypage.CategorypageLeftmenu@5f3a4b84</td></tr>
+<tr>
+<td title='categorypage.Categorytopmenu.categorytop_menu()'><b>categorytop_menu</b><br>Test class: categorypage.Categorytopmenu</td>
+<td></td>
+<td>6</td>
+<td>categorypage.Categorytopmenu@5bcea91b</td></tr>
+<tr>
+<td title='plppage.PLPPageSearching.plppage_searching()'><b>plppage_searching</b><br>Test class: plppage.PLPPageSearching</td>
+<td></td>
+<td>21</td>
+<td>plppage.PLPPageSearching@46daef40</td></tr>
+<tr>
+<td title='cart.CartpopupAndUpdation.popupandupdation()'><b>popupandupdation</b><br>Test class: cart.CartpopupAndUpdation</td>
+<td></td>
+<td>28</td>
+<td>cart.CartpopupAndUpdation@3aeaafa6</td></tr>
+<tr>
+<td title='cart.CartProceedBtnExistance.proceedbtnexistance()'><b>proceedbtnexistance</b><br>Test class: cart.CartProceedBtnExistance</td>
+<td></td>
+<td>42</td>
+<td>cart.CartProceedBtnExistance@a38d7a3</td></tr>
+<tr>
+<td title='pdppage.ProductImageTest.productimageonpdp()'><b>productimageonpdp</b><br>Test class: pdppage.ProductImageTest</td>
+<td></td>
+<td>54</td>
+<td>pdppage.ProductImageTest@50d0686</td></tr>
+<tr>
+<td title='homepage.Searchkey.searchkeyenter()'><b>searchkeyenter</b><br>Test class: homepage.Searchkey</td>
+<td></td>
+<td>6</td>
+<td>homepage.Searchkey@25af5db5</td></tr>
+<tr>
+<td title='homepage.HomepageSections.section2_banner()'><b>section2_banner</b><br>Test class: homepage.HomepageSections</td>
+<td></td>
+<td>43</td>
+<td>homepage.HomepageSections@42d8062c</td></tr>
+</table><p>
+</body>
+</html>
